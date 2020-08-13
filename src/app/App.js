@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import './app.less';
 import {Route, BrowserRouter,NavLink} from "react-router-dom";
-import Home from "./Home";
-import Calculator from './Calculator';
-import Countdown from './Countdown';
+import Home from './component/Home/Home'
+import Calculator from './component/Calculator/Calculator';
+import Countdown from './component/CountDown/Countdown';
+import Header from './component/Header/Header';
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
       <div className="app">
         
         <BrowserRouter>
-
+          <Header/>
           <Route exact path='/' component={Home}/>
           <Route exact path='/calculator' component={Calculator}/>
           <Route exact path='/countdown' component={Countdown}/>
