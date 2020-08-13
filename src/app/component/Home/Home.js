@@ -16,7 +16,7 @@ const Home = () => {
 
         <div className='text'>
           <NavLink to='/calculator'>计算机</NavLink>
-          <NavLink to='/calculator'>倒计时</NavLink>
+          <NavLink to='/countdown'>倒计时</NavLink>
         </div>        
       </div>
     </div>
